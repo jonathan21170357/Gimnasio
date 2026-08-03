@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es" class="page" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Titan Gym - Transforma tu Cuerpo Hoy</title>
+        <meta
+            name="description"
+            content="Centro de entrenamiento de alto rendimiento. Planes accesibles, equipo de última generación, entrenadores certificados y ambiente de motivación."
+        />
+        <!-- [REFERENCIA DE IMAGEN: Icono o favicon local 'Imagenes/favicon-gym.png'] -->
+        <link rel="icon" href="Imagenes/favicon-gym.png" type="image/png" />
+    </head>
+
+    <body class="page__body">
+        <!-- HEADER / NAVEGACIÓN -->
+        <header class="header">
+            <div class="header__wrapper">
+                <!-- [REFERENCIA DE IMAGEN: Logo de marca 'Imagenes/logo-gym.png'] -->
+                <img class="header__logo" src="Imagenes/logo.png" alt="Logo Titan Gym" width="130" height="50" />
+
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="nav" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                        <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
+                        <li><a href="#planes" class="nav__link">Planes & Precios</a></li>
+                        <li><a href="#galeria" class="nav__link">Galería</a></li>
+                        <li><a href="#ubicacion" class="nav__link">Ubicación & Horarios</a></li>
+                        <li><a href="#inscripcion" class="btn btn--nav">Inscríbete Ahora</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- HERO / BANNER PRINCIPAL -->
+            <section id="inicio" class="hero">
+                <div class="hero__content">
+                    <span class="badge badge--neon">Gimnasio High Performance</span>
+                    <h1 class="hero__title">SUPERA TUS LÍMITES CADA DÍA</h1>
+                    <p class="hero__text">
+                        Accede a instalaciones premium, entrenamiento personalizado y la mejor comunidad para alcanzar tus metas físicas.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#inscripcion" class="btn btn--cta">¡Inscríbete Ahora!</a>
+                        <a href="#planes" class="btn btn--outline">Ver Planes</a>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <!-- [REFERENCIA DE IMAGEN: Imagen destacada del atleta o gym 'Imagenes/gym-hero.jpg'] -->
+                    <img src="Imagenes/gym-hero.jpg" alt="Atleta entrenando en el gimnasio" />
+                </div>
+            </section>
+
+            <!-- SECCIÓN 1: BENEFICIOS -->
+            <section id="beneficios" class="benefits">
+                <h2 class="section-title">¿Por Qué Elegir Titan Gym?</h2>
+                <div class="benefits__grid">
+                    <article class="b-card">
+                        <div class="b-card__icon">🏋️‍♂️</div>
+                        <h3 class="b-card__title">Equipo de Última Generación</h3>
+                        <p class="b-card__desc">Maquinaria biomecánica, zona de peso libre extensa y áreas dedicadas a CrossFit y funcional.</p>
+                    </article>
+                    <article class="b-card">
+                        <div class="b-card__icon">🥊</div>
+                        <h3 class="b-card__title">Clases Grupales Incluidas</h3>
+                        <p class="b-card__desc">Acceso sin costo adicional a clases de Box, Spinning, Yoga, Pilates y Hiit todos los días.</p>
+                    </article>
+                    <article class="b-card">
+                        <div class="b-card__icon">📊</div>
+                        <h3 class="b-card__title">Evaluación Nutricional</h3>
+                        <p class="b-card__desc">Seguimiento antropométrico mensual y guía de alimentación adaptada a tus objetivos específicos.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: PLANES Y PRECIOS -->
+            <section id="planes" class="pricing">
+                <h2 class="section-title">Elige Tu Plan de Entrenamiento</h2>
+                <div class="pricing__grid">
+                    <!-- Plan Básico -->
+                    <div class="p-card">
+                        <h3 class="p-card__name">Plan Básico</h3>
+                        <div class="p-card__price">$399 <span>/ mes</span></div>
+                        <ul class="p-card__features">
+                            <li>✔ Acceso total a pesas y cardio</li>
+                            <li>✔ Vestidores y regaderas</li>
+                            <li>❌ Sin clases grupales</li>
+                            <li>❌ Sin plan de nutrición</li>
+                        </ul>
+                        <a href="#inscripcion" class="btn btn--p-card" data-plan="Plan Básico">Elegir Plan</a>
+                    </div>
+
+                    <!-- Plan PRO (Destacado) -->
+                    <div class="p-card p-card--featured">
+                        <span class="badge badge--top">Más Popular</span>
+                        <h3 class="p-card__name">Plan Pro Fitness</h3>
+                        <div class="p-card__price">$699 <span>/ mes</span></div>
+                        <ul class="p-card__features">
+                            <li>✔ Acceso a pesas y cardio 24/7</li>
+                            <li>✔ Clases grupales ilimitadas</li>
+                            <li>✔ Evaluación física mensual</li>
+                            <li>✔ Pases para un invitado al mes</li>
+                        </ul>
+                        <a href="#inscripcion" class="btn btn--cta" data-plan="Plan Pro Fitness">Inscribirme a este Plan</a>
+                    </div>
+
+                    <!-- Plan VIP -->
+                    <div class="p-card">
+                        <h3 class="p-card__name">Plan Titan VIP</h3>
+                        <div class="p-card__price">$1,199 <span>/ mes</span></div>
+                        <ul class="p-card__features">
+                            <li>✔ Todos los beneficios del Plan Pro</li>
+                            <li>✔ Rutinas 1 a 1 con Entrenador Personal</li>
+                            <li>✔ Consulta nutricional quincenal</li>
+                            <li>✔ Locker privado asignado</li>
+                        </ul>
+                        <a href="#inscripcion" class="btn btn--p-card" data-plan="Plan Titan VIP">Elegir Plan</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: GALERÍA -->
+            <section id="galeria" class="gallery">
+                <h2 class="section-title">Nuestras Instalaciones</h2>
+                <div class="gallery__container">
+                    <div class="g-item">
+                        <!-- [REFERENCIA DE IMAGEN: Coloca 'Imagenes/zona-pesas.jpg'] -->
+                        <img src="Imagenes/zona-pesas.jpg" alt="Zona de peso libre y mancuernas" loading="lazy" />
+                        <span class="g-item__label">Zona de Pesas</span>
+                    </div>
+                    <div class="g-item">
+                        <!-- [REFERENCIA DE IMAGEN: Coloca 'Imagenes/zona-cardio.jpg'] -->
+                        <img src="Imagenes/zona-cardio.jpg" alt="Área de caminadoras y elípticas" loading="lazy" />
+                        <span class="g-item__label">Área de Cardio</span>
+                    </div>
+                    <div class="g-item">
+                        <!-- [REFERENCIA DE IMAGEN: Coloca 'Imagenes/clase-group.jpg'] -->
+                        <img src="Imagenes/clase-group.jpg" alt="Salon de clases dirigidas" loading="lazy" />
+                        <span class="g-item__label">Salón de Clases</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: UBICACIÓN Y HORARIOS -->
+            <section id="ubicacion" class="location">
+                <h2 class="section-title">Ubicación & Horarios</h2>
+                <div class="location__grid">
+                    <div class="l-card">
+                        <h3>📍 Dónde Estamos</h3>
+                        <p>Av. Álvaro Obregón #890, Col. Centro, Culiacán, Sin.</p>
+                        <p class="l-card__sub">Instalaciones climatizadas con estacionamiento exclusivo monitoreado 24/7.</p>
+                    </div>
+                    <div class="l-card">
+                        <h3>⏰ Horarios de Operación</h3>
+                        <ul class="l-hours">
+                            <li><span>Lunes a Viernes:</span> 5:00 AM – 11:00 PM</li>
+                            <li><span>Sábados:</span> 6:00 AM – 8:00 PM</li>
+                            <li><span>Domingos:</span> 7:00 AM – 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: FORMULARIO CTA "INSCRÍBETE AHORA" -->
+            <section id="inscripcion" class="cta-section">
+                <div class="cta-section__box">
+                    <h2 class="cta-section__title">¡Forma Parte de Titan Gym Hoy!</h2>
+                    <p class="cta-section__sub">Llena el formulario para asegurar tu costo de inscripción congelado y obtener tu clase muestra sin costo.</p>
+
+                    <form id="signup-form" class="signup-form">
+                        <div class="form-row">
+                            <input type="text" id="user-nombre" required placeholder="Nombre completo" />
+                            <input type="tel" id="user-tel" pattern="[0-9]{10}" required placeholder="Teléfono (10 dígitos)" />
+                        </div>
+                        <div class="form-row">
+                            <select id="user-plan" required>
+                                <option value="">Selecciona tu plan de interés</option>
+                                <option value="Plan Básico">Plan Básico ($399/mes)</option>
+                                <option value="Plan Pro Fitness">Plan Pro Fitness ($699/mes)</option>
+                                <option value="Plan Titan VIP">Plan Titan VIP ($1,199/mes)</option>
+                            </select>
+                            <select id="user-horario" required>
+                                <option value="">Horario preferido de asistencia</option>
+                                <option value="Mañana (5 AM - 12 PM)">Mañana (5 AM - 12 PM)</option>
+                                <option value="Tarde (12 PM - 6 PM)">Tarde (12 PM - 6 PM)</option>
+                                <option value="Noche (6 PM - 11 PM)">Noche (6 PM - 11 PM)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--submit">Confirmar mi Inscripción</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- BOTÓN FLOTANTE WHATSAPP -->
+        <a
+            href="https://wa.me/5216676271665?text=Hola,%20quisiera%20pedir%20informes%20sobre%20las%20membresías%20de%20Titan%20Gym"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar a Titan Gym por WhatsApp"
+        >
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 Titan Gym Club. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

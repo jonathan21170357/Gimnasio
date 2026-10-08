@@ -1,9 +1,9 @@
 // ==========================================================================
-// ARCHIVO DE INTERACTIVIDAD - TITAN GYM
+// JAVASCRIPT INTERACTIVITY FILE - TITAN GYM
 // ==========================================================================
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. MENÚ RESPONSIVO MÓVIL
+    // 1. MOBILE RESPONSIVE MENU
     const menuBtn = document.getElementById("menu-btn");
     const navMenu = document.getElementById("nav-menu");
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.toggle("nav--active");
         });
 
-        // Cierra el menú al presionar enlaces
+        // Closes the menu when clicking on links
         document.querySelectorAll(".nav__link").forEach((link) => {
             link.addEventListener("click", () => {
                 navMenu.classList.remove("nav--active");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. SELECCIÓN AUTOMÁTICA DE PLAN DESDE LAS TARJETAS HASTA EL FORMULARIO
+    // 2. AUTOMATIC PLAN SELECTION FROM CARDS TO THE FORM
     const planButtons = document.querySelectorAll("[data-plan]");
     const selectPlan = document.getElementById("user-plan");
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 3. ENVÍO DEL FORMULARIO A WHATSAPP (CTA DE INSCRIPCIÓN)
+    // 3. FORM SUBMISSION TO WHATSAPP (SIGNUP CTA)
     const signupForm = document.getElementById("signup-form");
 
     if (signupForm) {
@@ -46,16 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const horario = document.getElementById("user-horario").value;
 
             if (!nombre || !telefono || !plan || !horario) {
-                alert("Por favor completa todos los datos requeridos.");
+                alert("Please complete all required data.");
                 return;
             }
 
-            // Crear mensaje para WhatsApp
-            const mensajeWS = `¡Hola Titan Gym! Deseo inscribirme con la oferta del sitio web:%0A` +
-                `👤 *Nombre:* ${encodeURIComponent(nombre)}%0A` +
-                `📱 *Teléfono:* ${encodeURIComponent(telefono)}%0A` +
-                `⚡ *Plan seleccionado:* ${encodeURIComponent(plan)}%0A` +
-                `⏰ *Horario de preferencia:* ${encodeURIComponent(horario)}`;
+            // Create message for WhatsApp in English
+            const mensajeWS = `Hello Titan Gym! I would like to sign up with the website offer:%0A` +
+                `👤 *Name:* ${encodeURIComponent(nombre)}%0A` +
+                `📱 *Phone:* ${encodeURIComponent(telefono)}%0A` +
+                `⚡ *Selected Plan:* ${encodeURIComponent(plan)}%0A` +
+                `⏰ *Preferred Schedule:* ${encodeURIComponent(horario)}`;
 
             const telefonoGym = "5216676271665";
             const url = `https://wa.me/${telefonoGym}?text=${mensajeWS}`;
